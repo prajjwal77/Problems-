@@ -1,7 +1,7 @@
 package Multithreading;
 
 import java.util.Scanner;
-
+//Using Runnable interface to achive multithreading
 class Calc1 implements Runnable{
 	public void run() {
 		System.out.println("Calculation Task Started : ");
