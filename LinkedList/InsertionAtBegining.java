@@ -13,7 +13,7 @@ public class InsertionAtBegining {
 			 next = null;
 		 }
 	 }
-	 
+	 //insertion method
 	 public void InsertionAtBegining(int newData) {
 		Node newNode = new Node(newData);
 		
