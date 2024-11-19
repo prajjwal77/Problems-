@@ -26,7 +26,7 @@ public class InsertionAtBegining {
 		newNode.next = head;
 		head = newNode;
 	}
-	 
+	 //traversal method
 	 public void displayLL() {
 		 Node tempNode = head;
 		 while(tempNode != null) {
