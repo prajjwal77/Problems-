@@ -1,5 +1,6 @@
 package LinkedList;
 
+
 import LinkedList.DeletionOfNode.Node;
 
 public class ReverseLinkedList {
@@ -13,6 +14,7 @@ public class ReverseLinkedList {
 			next = null;
 		}
 	}
+	//1..Iterative approach
 	public void reversal() {
 		if(head==null) {
 			return;
@@ -26,7 +28,20 @@ public class ReverseLinkedList {
 			prevNode = curr;
 			curr = nextNode;
 		}
-		head =prevNode;
+		head = prevNode;
+	}
+	//2..Recursive approach
+	public void reverseLL(Node curr, Node prev) {
+		//last node of linked list
+		if(curr.next == null) {
+			head = curr ;
+			curr.next = prev ;
+			return;
+		}
+		Node nextNode = curr.next;
+		curr.next = prev;
+		//recursive function call
+		reverseLL(nextNode, curr);
 	}
 	
 	//insert at beginning
@@ -67,7 +82,8 @@ public class ReverseLinkedList {
 		rL.traversal();
 		System.out.println();
 		System.out.println("After Reversing the list :");
-		rL.reversal();
+		//rL.reversal();
+		rL.reverseLL(rL.head, null);
 		rL.traversal();
 	}
 }
