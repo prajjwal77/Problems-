@@ -34,7 +34,7 @@ public class MiddleNode {
 			}
 			System.out.println("The Middle node is : "+currNode.data);
 		}
-		////insert at beginning
+		////insertion at ending
 		public void insert(int data) {
 			Node newNode = new Node(data);
 			if(head==null) {
