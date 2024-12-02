@@ -1,7 +1,7 @@
 package Queue;
 
 import java.util.Stack;
-
+//Implementing Queue using 2 stack
 public class QueueUsingStack {
 	static Stack<Integer> stack1 = new Stack<>();
 	static Stack<Integer> stack2 = new Stack<>();
