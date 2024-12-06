@@ -1,5 +1,6 @@
 package LeetCode;
-
+//TC = O(n)
+//SC = O(n)
 import java.util.ArrayDeque;
 import java.util.Deque;
 
