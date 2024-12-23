@@ -1,7 +1,8 @@
 package AMCATPrep;
 
+import java.util.*;
 import java.util.Scanner;
-
+//Important for placement
 public class BitDifference {
 	public static int[] decToBin(int nums) {
 		int div=0;
