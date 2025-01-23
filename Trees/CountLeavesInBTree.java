@@ -49,7 +49,7 @@ public class CountLeavesInBTree {
         return countLeaves(node.left) + countLeaves(node.right);
     }
     //count the number of nodes in Complete Binary Tree
-public int countNodes(TreeNode root) {
+    public int countNodes(TreeNode root) {
         if(root == null)
             return 0;
         if(root.left ==null && root.right==null)
