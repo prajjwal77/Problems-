@@ -48,7 +48,17 @@ public class CountLeavesInBTree {
         }
         return countLeaves(node.left) + countLeaves(node.right);
     }
+    //count the number of nodes in Complete Binary Tree
+public int countNodes(TreeNode root) {
+        if(root == null)
+            return 0;
+        if(root.left ==null && root.right==null)
+        return 1;
 
+        int leftHeight = countNodes(root.left);
+        int rightHeight = countNodes(root.right);
+        return 1+leftHeight+rightHeight;
+    }
     public static void main(String[] args) {
         CountLeavesInBTree tree = new CountLeavesInBTree();
 
