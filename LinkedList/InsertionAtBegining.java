@@ -1,7 +1,5 @@
 package LinkedList;
 
-import javax.xml.transform.Source;
-
 public class InsertionAtBegining {
 	Node head;
 	 class Node{
@@ -47,3 +45,4 @@ public class InsertionAtBegining {
 		lListAtBegining.displayLL();
 	}
 }
+
